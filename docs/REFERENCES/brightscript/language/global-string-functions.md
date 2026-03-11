@@ -215,13 +215,3 @@ thing = "book"
 color = "red"
 print Substitute("My {0} is {1}.", thing, color) ' prints "My book is red."
 ~~~
-
-## Arg(arg%1 as String, arg%2 as String, arg%3 as String,str as String, , arg1 as String = "",
-
-Replaces %*n* placeholders (for example, %1, %2, etc.) with arg1, arg2, and so on. The placeholders are not zero-index-based.  
-
-**Example**
-
-```
-currentPlanText = Substitute(tr("Current plan: %1 %2 %3/%4", tierDisplayName, LCase(getPlanName(currentPlan.productType)), cost, currentPlan.renewalPeriodNounTextAbbrv)
-```
